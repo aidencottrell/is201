@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Walls of Jericho</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+            :root {
+                --bg: #0f1412;
+                --panel: #18211d;
+                --text: #ecf4ef;
+                --muted: #b3c5bb;
+                --accent: #b9d5c6;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                padding: 2rem 1rem 3rem;
+                background:
+                    radial-gradient(1000px 450px at 50% -10%, #2b3b34 0%, transparent 60%),
+                    linear-gradient(180deg, #121916 0%, var(--bg) 55%, #0a0f0d 100%);
+                color: var(--text);
+                text-align: center;
+                font-family: "Source Sans 3", Arial, sans-serif;
+            }
+
+            h1 {
+                margin-top: 0;
+                font-family: "Cinzel", Georgia, serif;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                font-size: clamp(1.8rem, 5vw, 3rem);
+            }
+
+            p {
+                color: var(--muted);
+                margin-top: 0.2rem;
+            }
+
+            .gallery {
+                max-width: 1100px;
+                margin: 1.5rem auto 0;
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+
+            .gallery img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 14px;
+                border: 2px solid rgba(185, 213, 198, 0.22);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+            }
+
+            .back-link {
+                display: inline-block;
+                margin-top: 1.2rem;
+                color: var(--accent);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Walls of Jericho</h1>
+        <p>Alabama Hike Gallery</p>
+
+        <section class="gallery">
+            <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Walls_of_Jericho2_by_Ed_Orth.jpg?crop=0%2C79%2C1193%2C626&wid=1200&hei=630&scl=0.9941666666666666" alt="Walls of Jericho overlook">
+            <img src="https://i0.wp.com/bhamnow.com/wp-content/uploads/2017/10/extra_large_d244fd4c638acef1852302267b93af85.jpg?fit=1280%2C851&amp;quality=89&amp;ssl=1" alt="Waterfall at Walls of Jericho">
+            <img src="https://i0.wp.com/huntsvilleadventurer.com/wp-content/uploads/2019/06/IMG_20200411_115639-2.jpg?resize=1080%2C675&amp;ssl=1" alt="Trail view at Walls of Jericho">
+        </section>
+
+        <a class="back-link" href="index.html#state-alabama">Back to Alabama hikes</a>
+    </body>
+</html>

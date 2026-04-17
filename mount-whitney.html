@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mount Whitney</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+            :root {
+                --bg: #0f1412;
+                --text: #ecf4ef;
+                --muted: #b3c5bb;
+                --accent: #b9d5c6;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                padding: 2rem 1rem 3rem;
+                background:
+                    radial-gradient(1000px 450px at 50% -10%, #2b3b34 0%, transparent 60%),
+                    linear-gradient(180deg, #121916 0%, var(--bg) 55%, #0a0f0d 100%);
+                color: var(--text);
+                text-align: center;
+                font-family: "Source Sans 3", Arial, sans-serif;
+            }
+
+            h1 {
+                margin-top: 0;
+                font-family: "Cinzel", Georgia, serif;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                font-size: clamp(1.8rem, 5vw, 3rem);
+            }
+
+            .description {
+                max-width: 900px;
+                margin: 0.5rem auto 1.2rem;
+                color: var(--muted);
+                line-height: 1.65;
+                white-space: pre-line;
+            }
+
+            .gallery {
+                max-width: 1100px;
+                margin: 1rem auto 0;
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+
+            .gallery img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 14px;
+                border: 2px solid rgba(185, 213, 198, 0.22);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+            }
+
+            .trail-map {
+                margin: 1.2rem auto 0;
+                width: min(100%, 900px);
+                border-radius: 14px;
+                border: 2px solid rgba(185, 213, 198, 0.22);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+                display: block;
+            }
+
+            .back-link {
+                display: inline-block;
+                margin-top: 1.2rem;
+                color: var(--accent);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mount Whitney</h1>
+        <p class="description">Mount Whitney is the tallest mountain in California, standing at an elevation of 14,505 feet (4,421 m). It is also the highest peak in the contiguous United States and is located in the Sierra Nevada range on the border of Sequoia National Park and Inyo National
+
+Mileage: 21-22 Miles
+Elevation Gain: 6,100-6,600 Feet
+Time: 12-16 Hours to Summit</p>
+
+        <section class="gallery">
+            <img src="https://cdn.elebase.io/29559e61-1a75-4e70-a155-f8688960c1c1/2159e8f3-0fcb-4446-be6e-cfb14df2f07c-sie7a8459f1bf76256e1.jpg?w=680&h=382&fit=crop&rot=auto&dpr=2&q=75" alt="Mount Whitney ridgeline view">
+            <img src="https://images-sp.summitpost.org/tr:e-sharpen,e-contrast-1,fit-max,q-60,h-800/1013361.jpg" alt="Mount Whitney summit trail">
+            <img src="https://sierramountaincenter.com/wp-content/uploads/2024/09/caleb-jack-n3mgcP5KqrY-unsplash-scaled.jpg" alt="Hiker on Mount Whitney terrain">
+        </section>
+
+        <img class="trail-map" src="https://hikingguy.com/wp-content/uploads/mt-whitney-trail-map-overview-1920x1080.jpg" alt="Mount Whitney trail map overview">
+
+        <a class="back-link" href="index.html#state-california">Back to California hikes</a>
+    </body>
+</html>

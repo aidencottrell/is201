@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leatherman Peak</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+            :root {
+                --bg: #0f1412;
+                --text: #ecf4ef;
+                --muted: #b3c5bb;
+                --accent: #b9d5c6;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                padding: 2rem 1rem 3rem;
+                background:
+                    radial-gradient(1000px 450px at 50% -10%, #2b3b34 0%, transparent 60%),
+                    linear-gradient(180deg, #121916 0%, var(--bg) 55%, #0a0f0d 100%);
+                color: var(--text);
+                text-align: center;
+                font-family: "Source Sans 3", Arial, sans-serif;
+            }
+
+            h1 {
+                margin-top: 0;
+                font-family: "Cinzel", Georgia, serif;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                font-size: clamp(1.8rem, 5vw, 3rem);
+            }
+
+            .description {
+                max-width: 900px;
+                margin: 0.5rem auto 1.2rem;
+                color: var(--muted);
+                line-height: 1.65;
+                white-space: pre-line;
+            }
+
+            .gallery {
+                max-width: 1100px;
+                margin: 1rem auto 0;
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+
+            .gallery img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 14px;
+                border: 2px solid rgba(185, 213, 198, 0.22);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+            }
+
+            .trail-map {
+                margin: 1.2rem auto 0;
+                width: min(100%, 900px);
+                border-radius: 14px;
+                border: 2px solid rgba(185, 213, 198, 0.22);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+                display: block;
+            }
+
+            .back-link {
+                display: inline-block;
+                margin-top: 1.2rem;
+                color: var(--accent);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Leatherman Peak</h1>
+        <p class="description">Leatherman Peak, at 12,228 feet above sea level is the second highest peak in Idaho and the Lost River Range. The peak is located in Salmon-Challis National Forest in Custer County. It is 4.5 mi southeast of Borah Peak, its line parent. It is also about 4.5 mi northeast from U.S. Route 92.
+
+Mileage: 5 Miles
+Elevation Gain: 4,000 Feet
+Time: 7 Hours</p>
+
+        <section class="gallery">
+            <img src="https://www.idahoaclimbingguide.com/wp-content/uploads/Leatherman-from-Sawmill-Gulch-e1400078883161.jpg" alt="Leatherman Peak from Sawmill Gulch">
+            <img src="https://www.explorumentary.com/uploads/1/0/4/5/104551261/sandwich-leatherman_orig.jpg" alt="Leatherman Peak ridgeline">
+            <img src="https://i.redd.it/leatherman-peak-idaho-via-the-west-ridge-class-3-v0-421k9ykfkiib1.jpg?width=1440&format=pjpg&auto=webp&s=02740e24cc89a1cb6e5310530439aa96219f199d" alt="Leatherman Peak west ridge">
+        </section>
+
+        <img class="trail-map" src="https://www.alltrails.com/mugen/image/trail-app-router?url=https%3A%2F%2Fwww.alltrails.com%2Fapi%2Falltrails%2Fv3%2Ftrails%2F10679598%2Fstatic_map%3Fkey%3D3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i%26size%3D342x424%26scale%3D2%26show_3d%3Dyes&w=3840&q=75" alt="Leatherman Peak trail map">
+
+        <a class="back-link" href="index.html#state-idaho">Back to Idaho hikes</a>
+    </body>
+</html>

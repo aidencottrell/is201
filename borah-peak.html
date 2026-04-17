@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Borah Peak</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+            :root {
+                --bg: #0f1412;
+                --text: #ecf4ef;
+                --muted: #b3c5bb;
+                --accent: #b9d5c6;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                padding: 2rem 1rem 3rem;
+                background:
+                    radial-gradient(1000px 450px at 50% -10%, #2b3b34 0%, transparent 60%),
+                    linear-gradient(180deg, #121916 0%, var(--bg) 55%, #0a0f0d 100%);
+                color: var(--text);
+                text-align: center;
+                font-family: "Source Sans 3", Arial, sans-serif;
+            }
+
+            h1 {
+                margin-top: 0;
+                font-family: "Cinzel", Georgia, serif;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                font-size: clamp(1.8rem, 5vw, 3rem);
+            }
+
+            .description {
+                max-width: 900px;
+                margin: 0.5rem auto 1.2rem;
+                color: var(--muted);
+                line-height: 1.65;
+                white-space: pre-line;
+            }
+
+            .gallery {
+                max-width: 1100px;
+                margin: 1rem auto 0;
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+
+            .gallery img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 14px;
+                border: 2px solid rgba(185, 213, 198, 0.22);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+            }
+
+            .trail-map {
+                margin: 1.2rem auto 0;
+                width: min(100%, 900px);
+                border-radius: 14px;
+                border: 2px solid rgba(185, 213, 198, 0.22);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+                display: block;
+            }
+
+            .back-link {
+                display: inline-block;
+                margin-top: 1.2rem;
+                color: var(--accent);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Borah Peak</h1>
+        <p class="description">Mount Borah (also known as Borah Peak) is the tallest mountain in Idaho, standing at an elevation of 12,662 to 12,668 feet. Located in the Lost River Range within the Salmon-Challis National Forest, it is a challenging, non-technical climb known for the "Chicken Out Ridge" and a steep 5,500-foot elevation gain.
+
+Mileage: 8.4 Miles
+Elevation Gain: 5,600 Feet
+Time: 8-12 Hours</p>
+
+        <section class="gallery">
+            <img src="https://i0.wp.com/outdoorpilgrim.com/wp-content/uploads/2020/10/IMG_6850-1.jpg?resize=1024%2C768&ssl=1" alt="Borah Peak trail scene">
+            <img src="https://roamingtogether.com/wp-content/uploads/2023/09/53160445793_d958c367ef_c.jpg" alt="Borah Peak ascent view">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhoeD3wKFUJAU6iXIefR8d2p6FhXBrMXMJbDo9u9wR7P9woESKpkfO5PbW_LUneZdzdzF9vq4jWIc85dIW6HMBWOhc_F1J8Rf63nAPXCG1ymRriDtqJg4R_MzuNAp-DwDpbNICxtZDM3XJ/s2048/IMG_2883.jpg" alt="View from Borah Peak">
+        </section>
+
+        <img class="trail-map" src="https://www.idahoaclimbingguide.com/wp-content/uploads/image779.jpg" alt="Borah Peak route map">
+
+        <a class="back-link" href="index.html#state-idaho">Back to Idaho hikes</a>
+    </body>
+</html>

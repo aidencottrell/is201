@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+            :root {
+                --bg: #0f1412;
+                --bg-elevated: #18211d;
+                --text: #ecf4ef;
+                --muted: #b3c5bb;
+                --accent: #6f8f7d;
+                --mountain-glow: #b9d5c6;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                padding: 2rem 1.25rem 3rem;
+                background:
+                    radial-gradient(1200px 500px at 50% -10%, #2b3b34 0%, transparent 60%),
+                    linear-gradient(180deg, #121916 0%, var(--bg) 55%, #0a0f0d 100%);
+                color: var(--text);
+                font-family: "Source Sans 3", Arial, sans-serif;
+                line-height: 1.6;
+                text-align: center;
+            }
+
+            h1, h2, h3 {
+                font-family: "Cinzel", Georgia, serif;
+                letter-spacing: 0.05em;
+                margin-bottom: 0.35rem;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                font-size: clamp(2rem, 5vw, 3.25rem);
+            }
+
+            h3 {
+                color: var(--muted);
+                font-weight: 400;
+                margin-top: 0;
+            }
+
+            p {
+                max-width: 65ch;
+                margin: 1rem auto 1.5rem;
+                color: var(--muted);
+            }
+
+            a {
+                color: var(--mountain-glow);
+            }
+
+            img {
+                max-width: min(90vw, 650px);
+                height: auto;
+                border-radius: 14px;
+                margin: 0.8rem;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+                transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+            }
+
+            img:hover {
+                transform: translateY(-3px);
+            }
+
+            /* Emphasize the two mountain photos that come after intro text */
+            p + img,
+            p + img + img {
+                border: 2px solid var(--accent);
+                filter: saturate(1.08) contrast(1.06);
+                box-shadow: 0 0 0 3px rgba(185, 213, 198, 0.18), 0 18px 34px rgba(0, 0, 0, 0.55);
+            }
+
+            p + img:hover,
+            p + img + img:hover {
+                transform: translateY(-5px) scale(1.02);
+                box-shadow: 0 0 0 3px rgba(185, 213, 198, 0.28), 0 26px 40px rgba(0, 0, 0, 0.65);
+            }
+
+            .states-section {
+                margin: 2.5rem auto 1rem;
+                max-width: 1150px;
+                padding: 1.2rem;
+                border-radius: 16px;
+                background: linear-gradient(180deg, rgba(24, 33, 29, 0.9), rgba(15, 20, 18, 0.92));
+                border: 1px solid rgba(185, 213, 198, 0.2);
+                box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+            }
+
+            .states-section h2 {
+                margin-top: 0;
+                text-transform: uppercase;
+                font-size: clamp(1.3rem, 3vw, 2rem);
+            }
+
+            .states-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 0.7rem;
+                text-align: left;
+            }
+
+            .state-item {
+                background: var(--bg-elevated);
+                border: 1px solid rgba(185, 213, 198, 0.18);
+                border-radius: 10px;
+                padding: 0.45rem 0.55rem 0.6rem;
+            }
+
+            .state-item summary {
+                cursor: pointer;
+                list-style: none;
+                font-family: "Cinzel", Georgia, serif;
+                font-size: 0.92rem;
+                letter-spacing: 0.03em;
+            }
+
+            .state-item summary::-webkit-details-marker {
+                display: none;
+            }
+
+            .state-item summary::after {
+                content: " ▾";
+                color: var(--mountain-glow);
+            }
+
+            .state-item[open] summary::after {
+                content: " ▴";
+            }
+
+            .state-item select {
+                width: 100%;
+                margin-top: 0.55rem;
+                padding: 0.38rem;
+                border-radius: 7px;
+                border: 1px solid rgba(185, 213, 198, 0.24);
+                background: #0f1714;
+                color: var(--text);
+                font-family: "Source Sans 3", Arial, sans-serif;
+            }
+
+            .state-links {
+                margin-top: 0.55rem;
+                display: grid;
+                gap: 0.4rem;
+            }
+
+            .state-links a {
+                display: block;
+                background: #0f1714;
+                border: 1px solid rgba(185, 213, 198, 0.24);
+                border-radius: 7px;
+                padding: 0.38rem 0.5rem;
+                text-decoration: none;
+                color: var(--text);
+                font-family: "Source Sans 3", Arial, sans-serif;
+                font-size: 0.92rem;
+            }
+
+            .state-links a:hover {
+                border-color: rgba(185, 213, 198, 0.55);
+                color: var(--mountain-glow);
+            }
+        </style>
+     </head>
+      <body>
+          <a id="TOP"></a>
+          <h1>Hikers Hub</h1>
+        <h3>Welcome to Hikers Hub</h3>
+<br><a href="https://www.nps.gov/index.htm" target="_blank"><img src="images/National Park Service.svg" alt="" width="30%"></a>
+<p>Welcome to the Hikers' dream. Where technology and the outdoors work together, making your adventure that much more enjoyable. Each state has its own beautiful territory and scenery, select down below the state and browse the many amazing hikes in that state.</p> 
+<img src="https://woody.cloudly.space/app/uploads/saint-gervais/2023/08/thumbs/056prt-1920x960.jpg" alt="" width="40%"> 
+<img src="images/mount whitney.jpg" alt="" width="30%"> 
+<section class="states-section">
+    <h2>Select a State</h2>
+    <div class="states-grid">
+        <details class="state-item" id="state-california">
+            <summary>California</summary>
+            <div class="state-links">
+                <a href="mount-whitney.html">Mount Whitney</a>
+                <a href="mount-williamson.html">Mount Williamson</a>
+            </div>
+        </details>
+        <details class="state-item" id="state-idaho">
+            <summary>Idaho</summary>
+            <div class="state-links">
+                <a href="borah-peak.html">Borah Peak</a>
+                <a href="leatherman-peak.html">Leatherman Peak</a>
+            </div>
+        </details>
+        <details class="state-item" id="state-utah">
+            <summary>Utah</summary>
+            <div class="state-links">
+                <a href="kings-peak.html">Kings Peak</a>
+                <a href="delicate-arch.html">Delicate Arch</a>
+            </div>
+        </details>
+    </div>
+    <p style="font-size: 0.8rem; margin: 0.8rem auto 0.2rem;">More states and hikes to come...</p>
+</section>
+    <p style="text-align:center; margin-top:2rem;"><a href="#TOP">Back to top</a></p>
+    <p style="text-align:center; font-size:0.9rem; margin-top:0.4rem;"><a href="creators-page.html">View Creator's Page</a></p>
+    <p style="text-align:center; font-size:0.9rem; margin-top:0.4rem;"><a href="hike-difficulty-calculator.html">Hike Difficulty Calculator</a></p>
+</body>
+</html>

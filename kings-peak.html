@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kings Peak</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+            :root {
+                --bg: #0f1412;
+                --text: #ecf4ef;
+                --muted: #b3c5bb;
+                --accent: #b9d5c6;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                padding: 2rem 1rem 3rem;
+                background:
+                    radial-gradient(1000px 450px at 50% -10%, #2b3b34 0%, transparent 60%),
+                    linear-gradient(180deg, #121916 0%, var(--bg) 55%, #0a0f0d 100%);
+                color: var(--text);
+                text-align: center;
+                font-family: "Source Sans 3", Arial, sans-serif;
+            }
+
+            h1 {
+                margin-top: 0;
+                font-family: "Cinzel", Georgia, serif;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                font-size: clamp(1.8rem, 5vw, 3rem);
+            }
+
+            .description {
+                max-width: 900px;
+                margin: 0.5rem auto 1.2rem;
+                color: var(--muted);
+                line-height: 1.65;
+                white-space: pre-line;
+            }
+
+            .gallery {
+                max-width: 1100px;
+                margin: 1rem auto 0;
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+
+            .gallery img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 14px;
+                border: 2px solid rgba(185, 213, 198, 0.22);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+            }
+
+            .trail-map {
+                margin: 1.2rem auto 0;
+                width: min(100%, 900px);
+                border-radius: 14px;
+                border: 2px solid rgba(185, 213, 198, 0.22);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+                display: block;
+            }
+
+            .back-link {
+                display: inline-block;
+                margin-top: 1.2rem;
+                color: var(--accent);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Kings Peak</h1>
+        <p class="description">Kings Peak, located in the Uinta Mountains, is the tallest mountain in Utah with an elevation of 13,528 feet (4,123 m). It is situated in Duchesne County and is part of the Ashley National Forest. It is known for being a remote and strenuous hike, usually requiring a 2-3 day backpacking trip to reach the summit.
+
+Mileage: 29 Miles
+Elevation Gain: 5500 Feet
+Time: 2-3 Days to Summit</p>
+
+        <section class="gallery">
+            <img src="https://images.squarespace-cdn.com/content/v1/6226f62738f4f73d2b353e79/c7b795e1-4211-4246-89c9-f1db4b0f1689/DSC07798.jpg" alt="Kings Peak summit view">
+            <img src="https://images.ctfassets.net/0wjmk6wgfops/6owMRBcma3Sro03ZnzVNvu/a1fd251d551fb2bd3f5530ce2a835b0d/1e88383377_494f39c1-12bf-4728-bfa5-04e56fbc17f4.jpg" alt="Kings Peak trail landscape">
+            <img src="https://adventr.co/wp-content/uploads/2018/09/KingsCover.jpg" alt="Kings Peak ridge">
+        </section>
+
+        <img class="trail-map" src="https://lh3.googleusercontent.com/proxy/Q0qXs_9b1_DNOusmVOaOo0nq2KKnu1DIn_B1D1r4ny_Y79-uGBHHZefRqKFPdfgsIH6T5Wy-Dc9x8C-Mue3Kv7Bz" alt="Kings Peak route image">
+
+        <a class="back-link" href="index.html#state-utah">Back to Utah hikes</a>
+    </body>
+</html>
